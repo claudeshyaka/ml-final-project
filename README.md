@@ -22,6 +22,18 @@ Moving on to the models and parameter tuning. First, a linear regression model w
 
 ## Results and Analysis
 
-First, the linear regression model reported a mean squared error of 0.0356 and the training time was 0.409 seconds. Now, these results suggest a fair performance of the linear model, however, keep in mind that this model did not take into account the time component of the data, which leads to conclude that these results, though they might be promising, do not capture the full aspect of the data. Second, the support vector regression (SVR) reported a mean squared error of 0.0340 and completed training in 16397.253 seconds which converts to approximately 4.5 hours. Similarly, the SVR model presents promising results, however, they are not representative of the complete dataset. Next, the first fully connected neural network reported a training loss of 0.8969 and a validation loss of 0.8176 after 500 epochs, and the second neural network reported a training loss of 0.8919 and a validation loss of 0.8158 after 1000 epochs. Both networks had suboptimal results compared to the SVR and linear regression models. Figure 3(a) shows the loss curves of the first fully connected neural network
+First, the linear regression model reported a mean squared error of 0.0356 and the training time was 0.409 seconds. Now, these results suggest a fair performance of the linear model, however, keep in mind that this model did not take into account the time component of the data, which leads to conclude that these results, though they might be promising, do not capture the full aspect of the data. Second, the support vector regression (SVR) reported a mean squared error of 0.0340 and completed training in 16397.253 seconds which converts to approximately 4.5 hours. Similarly, the SVR model presents promising results, however, they are not representative of the complete dataset. Next, the first fully connected neural network reported a training loss of 0.8969 and a validation loss of 0.8176 after 500 epochs, and the second neural network reported a training loss of 0.8919 and a validation loss of 0.8158 after 1000 epochs. Both networks had suboptimal results compared to the SVR and linear regression models. Figure 3(a) shows the loss curves of the first fully connected neural network and figure 3(b) shows the
+loss curve of the second fully connected neural network.
 
-![Figure 3(a)](https://github.com/claudeshyaka/ml-final-project/blob/main/images/loss_fun_3.png?raw=true) "Figure 3(a): Loss curve of the fully connected neural network with 3 hidden layers"
+![Figure 3(a)](https://github.com/claudeshyaka/ml-final-project/blob/main/images/loss_fun_3.png?raw=true) "Figure 3(a): Loss curve of the fully connected network with 3 hidden layers and 280 nodes."
+
+![Figure 3(b)](https://github.com/claudeshyaka/ml-final-project/blob/main/images/loss_fun_5.png?raw=true) "Figure 3(a): Loss curve of the fully connected network with 5 hidden layers and 681 nodes."
+
+Finally, the LSTM network configured with 1 layer, 64 hidden units, and an Adam optimizer reported a training loss of 0.4639 and a validation loss of 0.5457 after 10 epochs, and the LSTM network configured with a 3 layer, 64 hidden units, and the Adam optimizer reported a training loss of 0.4636 and a validation loss of 0.5339. Figure 4 (a) shows a plot of the
+predicted and actual electric load values over time for the LSTM trained with the Adam optimizer and 1 layer, and Figure 4 (b) shows a plot of the LSTM trained with the Adam optimizer and 3 layers, in addition, for both figures the black dotted line indicates the beginning of the validation data points.
+
+![Figure 4(a)](https://github.com/claudeshyaka/ml-final-project/blob/main/images/loss_fun.png?raw=true) "Figure 4(a): Predicted and actual electric load values over time for the LSTM trained with the
+Adam optimizer and 1 layer."
+
+![Figure 4(b)](https://github.com/claudeshyaka/ml-final-project/blob/main/images/loss_fun.png?raw=true) "Figure 4(b): Predicted and actual electric load values over time for the LSTM with 3 layers.
+"
