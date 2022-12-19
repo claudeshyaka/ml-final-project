@@ -32,8 +32,8 @@ loss curve of the second fully connected neural network.
 Finally, the LSTM network configured with 1 layer, 64 hidden units, and an Adam optimizer reported a training loss of 0.4639 and a validation loss of 0.5457 after 10 epochs, and the LSTM network configured with a 3 layer, 64 hidden units, and the Adam optimizer reported a training loss of 0.4636 and a validation loss of 0.5339. Figure 4 (a) shows a plot of the
 predicted and actual electric load values over time for the LSTM trained with the Adam optimizer and 1 layer, and Figure 4 (b) shows a plot of the LSTM trained with the Adam optimizer and 3 layers, in addition, for both figures the black dotted line indicates the beginning of the validation data points.
 
-![Figure 4(a)](https://github.com/claudeshyaka/ml-final-project/blob/main/images/loss_fun.png?raw=true) "Figure 4(a): Predicted and actual electric load values over time for the LSTM trained with the
+![Figure 4(a)](https://github.com/claudeshyaka/ml-final-project/blob/main/images/prediction_LSTM_1_layer.png?raw=true) "Figure 4(a): Predicted and actual electric load values over time for the LSTM trained with the
 Adam optimizer and 1 layer."
 
-![Figure 4(b)](https://github.com/claudeshyaka/ml-final-project/blob/main/images/loss_fun.png?raw=true) "Figure 4(b): Predicted and actual electric load values over time for the LSTM with 3 layers.
+![Figure 4(b)](https://github.com/claudeshyaka/ml-final-project/blob/main/images/prediction_LSTM_3_layer.png?raw=true) "Figure 4(b): Predicted and actual electric load values over time for the LSTM with 3 layers.
 "
